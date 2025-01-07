@@ -1,4 +1,7 @@
 import phpEcommerce from "../assets/projects/phpEcommerce.png";
+import dateCalculator from "../assets/projects/dateCalculator.png";
+import randomGenerator from "../assets/projects/randomGenerator.png";
+import myPortfolio from "../assets/projects/myPortfolio.png";
 
 export const HERO_CONTENT = `I'm an IT student and Full Stack developer, with experience in front-end technologies such as ReactJS and back-end using Java with Spring Framework, as well as databases such as MySQL, PostgreSQL and other tools. My goal is to apply and expand my knowledge, and I'm open to freelance and internship opportunities.`;
 
@@ -34,7 +37,42 @@ export const PROJECTS = [
     image: phpEcommerce,
     description:
       "A fully functional e-commerce website with features such as product listing, shopping cart and user authentication.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+  },
+  {
+    title: "Date Calculator Website",
+    image: dateCalculator,
+    description:
+      "A website to calculate the difference between two dates, displaying the result in years, months, weeks, and days",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Random Number Generator Website",
+    image: randomGenerator,
+    description:
+      "A random number generator that allows users to generate random numbers within a specified range",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Portfolio Website",
+    image: myPortfolio,
+    description:
+      "A personal portfolio website showcasing education, projects, and contact information, designed with a clean and responsive layout.",
+    technologies: ["React", "Tailwind CSS"],
+  },
+  {
+    title: "Parking Management API",
+    image: randomGenerator,
+    description:
+      "A RESTful API built with Spring Boot for managing parking lot operations, including users, vehicle check-in, check-out, and availability tracking.",
+    technologies: ["Java", "Spring", "MySQL"],
+  },
+  {
+    title: "Product Inventory System",
+    image: randomGenerator,
+    description:
+      "A fullstack application for managing products, including CRUD operations, built with a frontend in Html, CSS, JS and a backend in Spring Boot.",
+    technologies: ["Java", "Bootstrap", "H2", "HTML", "CSS", "JavaScript"],
   },
 ];
 

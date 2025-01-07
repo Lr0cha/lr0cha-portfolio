@@ -22,7 +22,7 @@ const Head = () => {
             <img
               src={profileJpg}
               alt="Lucas photo profile"
-              className="xs:w-1/2 sm:w-1/2 lg:w-2/3 h-auto"
+              className="xs:w-1/2 sm:w-1/2 lg:w-2/3 h-auto rounded"
             />
           </div>
         </div>

@@ -16,7 +16,7 @@ const Contact = () => {
         </p>
         <a
           href={`mailto:${CONTACT.email}`}
-          className="border-b hover:text-neutral-500 hover:border-neutral-500 "
+          className="border-b hover:text-neutral-500 "
         >
           <i class="fa-regular fa-envelope mr-2"></i>
           {CONTACT.email}

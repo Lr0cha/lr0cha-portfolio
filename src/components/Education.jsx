@@ -12,7 +12,6 @@ const Education = () => {
             key={index}
             className="mb-10 flex flex-wrap items-start justify-start bg-neutral-900 p-6 rounded-lg shadow-lg"
           >
-            {/* Ano de formação */}
             <div className="w-full lg:w-1/4 mb-6 lg:mb-0">
               <p className="text-sm font-semibold text-cyan-400">
                 {education.year}
@@ -38,7 +37,7 @@ const Education = () => {
                   {education.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="mr-3 mb-2 rounded bg-neutral-800 px-3 py-1 text-sm font-medium text-purple-200"
+                      className="mr-3 mb-2 rounded bg-neutral-800 px-3 py-1 text-sm font-medium text-purple-400"
                     >
                       {tech}
                     </span>

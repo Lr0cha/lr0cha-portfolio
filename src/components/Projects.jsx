@@ -10,7 +10,7 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <div
             key={index}
-            className="mb-8 flex flex-wrap lg:justify-start items-center"
+            className="mb-10 flex flex-wrap lg:justify-start items-center"
           >
             <img
               src={project.image}
@@ -24,7 +24,7 @@ const Projects = () => {
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 mb-1 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                    className="mr-2 mb-1 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600"
                   >
                     {tech}
                   </span>
