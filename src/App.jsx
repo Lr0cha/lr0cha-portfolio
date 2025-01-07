@@ -4,6 +4,7 @@ import Head from "./components/Head";
 import Technologies from "./components/Technologies";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 const App = () => {
   return (
     <div className=" text-neutral-300 antialiased selection: bg-cyan-3000 selection:text-cyan-900 min-h-screen">
@@ -20,6 +21,7 @@ const App = () => {
         <Technologies />
         <Education />
         <Projects />
+        <Contact />
       </div>
     </div>
   );
