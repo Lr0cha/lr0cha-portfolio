@@ -6,7 +6,7 @@ const Head = () => {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-            <h1 className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl">
+            <h1 className="pb-10 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl">
               Lucas Bianchin
             </h1>
             <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
@@ -22,7 +22,7 @@ const Head = () => {
             <img
               src={profileJpg}
               alt="Lucas photo profile"
-              className="hidden sm:block w-1/2 lg:w-2/3 h-auto"
+              className="xs:w-1/2 sm:w-1/2 lg:w-2/3 h-auto"
             />
           </div>
         </div>
