@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Head from "./components/Head";
 import Technologies from "./components/Technologies";
+import Education from "./components/Education";
 const App = () => {
   return (
     <div className=" text-neutral-300 antialiased selection: bg-cyan-3000 selection:text-cyan-900 min-h-screen">
@@ -16,6 +17,7 @@ const App = () => {
         <Navbar />
         <Head />
         <Technologies />
+        <Education />
       </div>
     </div>
   );
