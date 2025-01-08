@@ -38,6 +38,8 @@ export const PROJECTS = [
     description:
       "A fully functional e-commerce website with features such as product listing, shopping cart and user authentication.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+    source: "https://github.com/Lr0cha/ecommerce-mvc-php",
+    live: "",
   },
   {
     title: "Date Calculator Website",
@@ -45,13 +47,8 @@ export const PROJECTS = [
     description:
       "A website to calculate the difference between two dates, displaying the result in years, months, weeks, and days",
     technologies: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    title: "Random Number Generator Website",
-    image: randomGenerator,
-    description:
-      "A random number generator that allows users to generate random numbers within a specified range",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/Lr0cha/date-calculator",
+    live: "https://lr0cha.github.io/date-calculator/",
   },
   {
     title: "Portfolio Website",
@@ -59,6 +56,8 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing education, projects, and contact information, designed with a clean and responsive layout.",
     technologies: ["React", "Tailwind CSS"],
+    source: "https://github.com/Lr0cha/my-portfolio-website",
+    live: "https://lr0cha.github.io/my-portfolio-website/",
   },
   {
     title: "Parking Management API",
@@ -66,6 +65,8 @@ export const PROJECTS = [
     description:
       "A RESTful API built with Spring Boot for managing parking lot operations, including users, vehicle check-in, check-out, and availability tracking.",
     technologies: ["Java", "Spring", "MySQL"],
+    source: "https://github.com/Lr0cha/Parking-Management-API",
+    live: "",
   },
   {
     title: "Product Inventory System",
@@ -73,6 +74,8 @@ export const PROJECTS = [
     description:
       "A fullstack application for managing products, including CRUD operations, built with a frontend in Html, CSS, JS and a backend in Spring Boot.",
     technologies: ["Java", "Bootstrap", "H2", "HTML", "CSS", "JavaScript"],
+    source: "",
+    live: "",
   },
 ];
 

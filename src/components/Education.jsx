@@ -1,10 +1,16 @@
 import { EDUCATION } from "../constants";
-
+import { motion } from "framer-motion";
 const Education = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <motion.div
+      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 5 }}
+      viewport={{ once: true }}
+      className="border-b border-neutral-900 pb-4"
+    >
       <h2 className="my-20 text-center text-4xl">
-        <i class="fa-solid fa-school mr-2"></i>Education
+        <i className="fa-solid fa-school mr-2"></i>Education
       </h2>
       <div>
         {EDUCATION.map((education, index) => (
@@ -48,7 +54,7 @@ const Education = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
