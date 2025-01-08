@@ -4,6 +4,7 @@ import randomGenerator from "../assets/projects/randomGenerator.png";
 import myPortfolio from "../assets/projects/myPortfolio.png";
 
 export const HERO_CONTENT = `I'm an IT student and Full Stack developer, with experience in front-end technologies such as ReactJS and back-end using Java with Spring Framework, as well as databases such as MySQL, PostgreSQL and other tools. My goal is to apply and expand my knowledge, and I'm open to freelance and internship opportunities.`;
+export const Resume = "src/assets/resume/LucasCurriculo.pdf";
 
 export const EDUCATION = [
   {

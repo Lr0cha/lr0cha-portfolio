@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { GITHUB_PROFILE, LINKEDIN_PROFILE } from "../constants";
+import { Resume } from "../constants";
 const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
@@ -11,8 +12,8 @@ const Navbar = () => {
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <div className="text-base">
           <a
-            href="#"
-            download="#"
+            href={Resume}
+            download
             className="border border-neutral-500 rounded p-2 hover:bg-neutral-600 text-purple-200"
           >
             <i className="fa-solid fa-download mr-2"></i>Resume

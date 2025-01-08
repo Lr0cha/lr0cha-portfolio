@@ -26,12 +26,14 @@ const Projects = () => {
                 >
                   <i className="fa-solid fa-code mr-2"></i>Source
                 </a>
-                <a
-                  href={project.live}
-                  className="text-purple-300 px-4 py-2 mx-2 bg-neutral-700 rounded-md hover:text-purple-700 cursor-pointer transition duration-200"
-                >
-                  <i className="fa-solid fa-globe mr-2"></i>Site
-                </a>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    className="text-purple-300 px-4 py-2 mx-2 bg-neutral-700 rounded-md hover:text-purple-700 cursor-pointer transition duration-200"
+                  >
+                    <i className="fa-solid fa-globe mr-2"></i>Site
+                  </a>
+                )}
               </div>
             </div>
             <div className="w-1/2 lg:w-2/3 pl-8">
