@@ -2,16 +2,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import {
-  RESUME,
-  LINKEDIN_PROFILE,
-  GITHUB_PROFILE,
-} from "../constants/index.js";
+import { LINKEDIN_PROFILE, GITHUB_PROFILE } from "../constants/index.js";
 
 const Navbar = () => {
   const { i18n } = useTranslation();
 
-  // Função para mudar o idioma
+  // Função p/ mudar o idioma
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
@@ -24,12 +20,12 @@ const Navbar = () => {
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <div className="text-base">
           <a
-            href={RESUME}
-            download
+            href="/assets/resume/LucasCurriculo.pdf"
+            download="LucasCurriculo.pdf"
             className="border border-neutral-500 rounded p-2 hover:bg-neutral-600 text-purple-200"
           >
             <i className="fa-solid fa-download hidden sm:inline mr-2"></i>
-            {i18n.t("RESUME")}
+            Resume
           </a>
         </div>
         <a href={LINKEDIN_PROFILE.url}>

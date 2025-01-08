@@ -1,5 +1,3 @@
-export const RESUME = "src/assets/resume/LucasCurriculo.pdf";
-
 export const GITHUB_PROFILE = {
   url: "https://github.com/Lr0cha",
 };

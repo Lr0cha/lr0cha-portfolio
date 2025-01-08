@@ -57,7 +57,7 @@ export default {
         "A personal portfolio website showcasing education, projects, and contact information, designed with a clean and responsive layout.",
       technologies: ["React", "Tailwind CSS"],
       source: "https://github.com/Lr0cha/my-portfolio-website",
-      live: "",
+      live: "https://my-portfolio-website-weld-five.vercel.app/",
     },
     {
       title: "Parking Management API",
