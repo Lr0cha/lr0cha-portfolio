@@ -1,6 +1,6 @@
-import { HERO_CONTENT } from "../constants";
 import profileJpg from "../assets/selfieProfile.jpg";
 import { delay, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -10,6 +10,7 @@ const container = (delay) => ({
   },
 });
 const Head = () => {
+  const { t } = useTranslation();
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -38,7 +39,7 @@ const Head = () => {
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter"
             >
-              {HERO_CONTENT}
+              {t("HERO_CONTENT")}
             </motion.p>
           </div>
         </div>

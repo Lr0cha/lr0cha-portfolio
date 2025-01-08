@@ -1,18 +1,18 @@
-import { PROJECTS } from "../constants";
-
+import { useTranslation } from "react-i18next";
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <div className="border-b border-neutral-900 pb-4">
       <h2 className="my-20 text-center text-4xl ">
         <i className="fa-solid fa-folder-open mr-2"></i>Projects
       </h2>
       <div>
-        {PROJECTS.map((project, index) => (
+        {t("PROJECTS", { returnObjects: true }).map((project, index) => (
           <div
             key={index}
-            className="mb-10 flex flex-wrap lg:justify-start items-center"
+            className="mb-10 flex flex-wrap flex-col md:flex-row lg:justify-start items-center"
           >
-            <div className="relative w-1/2 lg:w-1/3 h-48">
+            <div className="relative sm:w-2/3 lg:w-1/3 min-h-48 m-auto ">
               <img
                 src={project.image}
                 alt={project.title}
@@ -36,7 +36,7 @@ const Projects = () => {
                 )}
               </div>
             </div>
-            <div className="w-1/2 lg:w-2/3 pl-8">
+            <div className="sm:w-2/3  lg:w-2/3 m-auto pl-8">
               <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
               <p className="text-sm text-gray-600">{project.description}</p>
               <div className="flex flex-wrap">

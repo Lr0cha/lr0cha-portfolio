@@ -1,6 +1,7 @@
-import { EDUCATION } from "../constants";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 const Education = () => {
+  const { t } = useTranslation();
   return (
     <motion.div
       whileInView={{ opacity: 1 }}
@@ -13,7 +14,7 @@ const Education = () => {
         <i className="fa-solid fa-school mr-2"></i>Education
       </h2>
       <div>
-        {EDUCATION.map((education, index) => (
+        {t("EDUCATION", { returnObjects: true }).map((education, index) => (
           <div
             key={index}
             className="mb-10 flex flex-wrap items-start justify-start bg-neutral-900 p-6 rounded-lg shadow-lg"
