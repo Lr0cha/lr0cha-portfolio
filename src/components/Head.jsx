@@ -11,6 +11,30 @@ const container = (delay) => ({
 });
 const Head = () => {
   const { t } = useTranslation();
+  const content = t("HERO_CONTENT");
+
+  const keywords = [
+    "ReactJS",
+    "Java",
+    "Spring",
+    "MySQL",
+    "PostgreSQL",
+    "freelance",
+    "estágio",
+    "internship",
+  ];
+
+  const highlightedContent = content.split(" ").map((word, index) => {
+    if (keywords.some((keyword) => word.includes(keyword))) {
+      return (
+        <span key={index} className="font-bold text-purple-500">
+          {word + " "}
+        </span>
+      );
+    }
+    return word + " ";
+  });
+
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -39,7 +63,7 @@ const Head = () => {
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter"
             >
-              {t("HERO_CONTENT")}
+              {highlightedContent}
             </motion.p>
           </div>
         </div>

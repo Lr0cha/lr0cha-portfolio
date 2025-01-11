@@ -2,12 +2,11 @@ import { RiReactjsLine } from "react-icons/ri";
 import { RiJavaLine } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiSpringboot } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
-import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { SiPython } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { SiTypescript } from "react-icons/si";
 
 const techVariants = (duration) => ({
   initial: { y: -10 },
@@ -60,6 +59,14 @@ const Technologies = () => {
         >
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
+        <motion.div
+          variants={techVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiTypescript className="text-7xl text-blue-600" />
+        </motion.div>
 
         <motion.div
           variants={techVariants(6)}
@@ -71,25 +78,7 @@ const Technologies = () => {
         </motion.div>
 
         <motion.div
-          variants={techVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiJavascript className="text-7xl text-yellow-500" />
-        </motion.div>
-
-        <motion.div
-          variants={techVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiHtml5 className="text-7xl text-orange-500" />
-        </motion.div>
-
-        <motion.div
-          variants={techVariants(8)}
+          variants={techVariants(7)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -98,7 +87,7 @@ const Technologies = () => {
         </motion.div>
 
         <motion.div
-          variants={techVariants(5.5)}
+          variants={techVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"

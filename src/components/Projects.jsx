@@ -1,13 +1,24 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
 const Projects = () => {
   const { t } = useTranslation();
+
+  // N projetos visíveis(boolean)
+  const [showAll, setShowAll] = useState(false);
+
+  // lista de projects
+  const projects = t("PROJECTS", { returnObjects: true });
+
+  const projectsToShow = showAll ? projects : projects.slice(0, 3);
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <h2 className="my-20 text-center text-4xl ">
         <i className="fa-solid fa-folder-open mr-2"></i>Projects
       </h2>
       <div>
-        {t("PROJECTS", { returnObjects: true }).map((project, index) => (
+        {projectsToShow.map((project, index) => (
           <div
             key={index}
             className="mb-10 flex flex-wrap flex-col md:flex-row lg:justify-start items-center"
@@ -36,7 +47,7 @@ const Projects = () => {
                 )}
               </div>
             </div>
-            <div className="sm:w-2/3  lg:w-2/3 m-auto pl-8">
+            <div className="sm:w-2/3 lg:w-2/3 m-auto pl-8">
               <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
               <p className="text-sm text-gray-600">{project.description}</p>
               <div className="flex flex-wrap">
@@ -52,6 +63,17 @@ const Projects = () => {
             </div>
           </div>
         ))}
+
+        {projects.length > 3 && (
+          <div className="text-center mt-6">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="text-purple-500 hover:text-purple-700 font-medium"
+            >
+              {showAll ? t("SHOW_LESS") : t("SHOW_MORE")}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

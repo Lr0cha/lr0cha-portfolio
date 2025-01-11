@@ -79,9 +79,12 @@ export default {
     },
   ],
 
+  SHOW_MORE: "Mostrar mais",
+  SHOW_LESS: "Mostrar menos",
+
   CONTACT: {
     country: "Brasil",
-    phone: "+55 11 98999999",
+    phone: "+55 11 985353732",
     email: "ldrocha16@gmail.com",
   },
 

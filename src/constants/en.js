@@ -79,6 +79,9 @@ export default {
     },
   ],
 
+  SHOW_MORE: "Show more",
+  SHOW_LESS: "Show less",
+
   CONTACT: {
     country: "Brazil ",
     phone: "+55 11 985353732",

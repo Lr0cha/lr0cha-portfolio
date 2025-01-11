@@ -22,7 +22,8 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className="my-4"
         >
-          <i className="fa-solid fa-flag mr-2"></i> {t("CONTACT.country")}
+          <i className="fa-solid fa-location-dot mr-2"></i>{" "}
+          {t("CONTACT.country")}
         </motion.p>
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
