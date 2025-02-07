@@ -57,7 +57,7 @@ export default {
         "Um site de portfólio pessoal apresentando educação, projetos e informações de contato, com um design limpo e responsivo.",
       technologies: ["React", "Tailwind CSS"],
       source: "https://github.com/Lr0cha/my-portfolio-website",
-      live: "https://my-portfolio-website-weld-five.vercel.app/",
+      live: "https://lr0cha-portfolio.vercel.app/",
     },
     {
       title: "API de Gerenciamento de Estacionamento",
