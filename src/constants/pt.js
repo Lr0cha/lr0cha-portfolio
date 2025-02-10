@@ -1,7 +1,8 @@
 import phpEcommerce from "../assets/projects/phpEcommerce.png";
 import dateCalculator from "../assets/projects/dateCalculator.png";
-import randomGenerator from "../assets/projects/randomGenerator.png";
+import park from "../assets/projects/park.png";
 import myPortfolio from "../assets/projects/myPortfolio.png";
+import findBooks from "../assets/projects/findBooks.png";
 export default {
   HERO_CONTENT: `Sou estudante de TI e desenvolvedor Full Stack, com experiência em tecnologias de front-end como ReactJS e back-end usando Java com Spring Framework, além de bancos de dados como MySQL, PostgreSQL e outras ferramentas. Meu objetivo é aplicar e expandir meus conhecimentos, e estou aberto a oportunidades de freelance e estágio.`,
 
@@ -51,17 +52,17 @@ export default {
       live: "https://lr0cha.github.io/date-calculator/",
     },
     {
-      title: "Site de Portfólio",
-      image: myPortfolio,
+      title: "Site de busca de livros",
+      image: findBooks,
       description:
-        "Um site de portfólio pessoal apresentando educação, projetos e informações de contato, com um design limpo e responsivo.",
-      technologies: ["React", "Tailwind CSS"],
-      source: "https://github.com/Lr0cha/my-portfolio-website",
-      live: "https://lr0cha-portfolio.vercel.app/",
+        "Um site para pesquisar detalhes de livros utilizando a API do OpenLibrary.",
+      technologies: ["React", "Typescript", "TailwindCSS"],
+      source: "https://github.com/Lr0cha/search-books",
+      live: "https://lr0cha-find-books.vercel.app/",
     },
     {
       title: "API de Gerenciamento de Estacionamento",
-      image: randomGenerator,
+      image: park,
       description:
         "Uma API RESTful construída com Spring Boot para gerenciar operações de estacionamento, incluindo usuários, check-in, check-out de veículos e controle de disponibilidade.",
       technologies: ["Java", "Spring", "MySQL"],
@@ -69,13 +70,13 @@ export default {
       live: "",
     },
     {
-      title: "Sistema de Inventário de Produtos",
-      image: randomGenerator,
+      title: "Site de Portfólio",
+      image: myPortfolio,
       description:
-        "Uma aplicação fullstack para gerenciar produtos, incluindo operações CRUD, construída com frontend em HTML, CSS, JS e backend em Spring Boot.",
-      technologies: ["Java", "Bootstrap", "H2", "HTML", "CSS", "JavaScript"],
-      source: "",
-      live: "",
+        "Um site de portfólio pessoal apresentando educação, projetos e informações de contato, com um design limpo e responsivo.",
+      technologies: ["React", "Tailwind CSS"],
+      source: "https://github.com/Lr0cha/my-portfolio-website",
+      live: "https://lr0cha-portfolio.vercel.app/",
     },
   ],
 

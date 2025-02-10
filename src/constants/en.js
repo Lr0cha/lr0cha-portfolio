@@ -1,7 +1,8 @@
 import phpEcommerce from "../assets/projects/phpEcommerce.png";
 import dateCalculator from "../assets/projects/dateCalculator.png";
-import randomGenerator from "../assets/projects/randomGenerator.png";
+import park from "../assets/projects/park.png";
 import myPortfolio from "../assets/projects/myPortfolio.png";
+import findBooks from "../assets/projects/findBooks.png";
 export default {
   HERO_CONTENT: `I'm an IT student and Full Stack developer, with experience in front-end technologies such as ReactJS and back-end using Java with Spring Framework, as well as databases such as MySQL, PostgreSQL and other tools. My goal is to apply and expand my knowledge, and I'm open to freelance and internship opportunities.`,
 
@@ -51,17 +52,17 @@ export default {
       live: "https://lr0cha.github.io/date-calculator/",
     },
     {
-      title: "Portfolio Website",
-      image: myPortfolio,
+      title: "Find Books Website",
+      image: findBooks,
       description:
-        "A personal portfolio website showcasing education, projects, and contact information, designed with a clean and responsive layout.",
-      technologies: ["React", "Tailwind CSS"],
-      source: "https://github.com/Lr0cha/my-portfolio-website",
-      live: "https://my-portfolio-website-weld-five.vercel.app/",
+        "A site to search for book details using the OpenLibrary API.",
+      technologies: ["React", "Typescript", "TailwindCSS"],
+      source: "https://github.com/Lr0cha/search-books",
+      live: "https://lr0cha-find-books.vercel.app/",
     },
     {
       title: "Parking Management API",
-      image: randomGenerator,
+      image: park,
       description:
         "A RESTful API built with Spring Boot for managing parking lot operations, including users, vehicle check-in, check-out, and availability tracking.",
       technologies: ["Java", "Spring", "MySQL"],
@@ -69,13 +70,13 @@ export default {
       live: "",
     },
     {
-      title: "Product Inventory System",
-      image: randomGenerator,
+      title: "Portfolio Website",
+      image: myPortfolio,
       description:
-        "A fullstack application for managing products, including CRUD operations, built with a frontend in Html, CSS, JS and a backend in Spring Boot.",
-      technologies: ["Java", "Bootstrap", "H2", "HTML", "CSS", "JavaScript"],
-      source: "",
-      live: "",
+        "A personal portfolio website showcasing education, projects, and contact information, designed with a clean and responsive layout.",
+      technologies: ["React", "Tailwind CSS"],
+      source: "https://github.com/Lr0cha/my-portfolio-website",
+      live: "https://lr0cha-portfolio.vercel.app/",
     },
   ],
 
