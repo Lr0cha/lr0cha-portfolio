@@ -1,6 +1,6 @@
 import phpEcommerce from "../assets/projects/phpEcommerce.png";
 import dateCalculator from "../assets/projects/dateCalculator.png";
-import park from "../assets/projects/park.png";
+import budget from "../assets/projects/budget.png";
 import myPortfolio from "../assets/projects/myPortfolio.png";
 import findBooks from "../assets/projects/findBooks.png";
 export default {
@@ -34,6 +34,31 @@ export default {
 
   PROJECTS: [
     {
+      title: "Site de controle pessoal de despesas",
+      image: budget,
+      description:
+        "Uma aplicação FullStack para gerir e registar as suas despesas",
+      technologies: [
+        "Java",
+        "Spring",
+        "PostgreSQL",
+        "React",
+        "Typescript",
+        "TailwindCSS",
+      ],
+      source: "https://github.com/Lr0cha/personal-budget",
+      live: "https://lr0cha-personal-budget.vercel.app/",
+    },
+    {
+      title: "Site de busca de livros",
+      image: findBooks,
+      description:
+        "Um site para pesquisar detalhes de livros utilizando a API do OpenLibrary.",
+      technologies: ["React", "Typescript", "TailwindCSS"],
+      source: "https://github.com/Lr0cha/search-books",
+      live: "https://lr0cha-find-books.vercel.app/",
+    },
+    {
       title: "Site de E-Commerce",
       image: phpEcommerce,
       description:
@@ -50,24 +75,6 @@ export default {
       technologies: ["HTML", "CSS", "JavaScript"],
       source: "https://github.com/Lr0cha/date-calculator",
       live: "https://lr0cha.github.io/date-calculator/",
-    },
-    {
-      title: "Site de busca de livros",
-      image: findBooks,
-      description:
-        "Um site para pesquisar detalhes de livros utilizando a API do OpenLibrary.",
-      technologies: ["React", "Typescript", "TailwindCSS"],
-      source: "https://github.com/Lr0cha/search-books",
-      live: "https://lr0cha-find-books.vercel.app/",
-    },
-    {
-      title: "API de Gerenciamento de Estacionamento",
-      image: park,
-      description:
-        "Uma API RESTful construída com Spring Boot para gerenciar operações de estacionamento, incluindo usuários, check-in, check-out de veículos e controle de disponibilidade.",
-      technologies: ["Java", "Spring", "MySQL"],
-      source: "https://github.com/Lr0cha/Parking-Management-API",
-      live: "",
     },
     {
       title: "Site de Portfólio",

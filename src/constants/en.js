@@ -1,6 +1,6 @@
 import phpEcommerce from "../assets/projects/phpEcommerce.png";
 import dateCalculator from "../assets/projects/dateCalculator.png";
-import park from "../assets/projects/park.png";
+import budget from "../assets/projects/budget.png";
 import myPortfolio from "../assets/projects/myPortfolio.png";
 import findBooks from "../assets/projects/findBooks.png";
 export default {
@@ -34,6 +34,31 @@ export default {
 
   PROJECTS: [
     {
+      title: "Personal Budget Website",
+      image: budget,
+      description:
+        "A FullStack application to manage and record your expenses.",
+      technologies: [
+        "Java",
+        "Spring",
+        "PostgreSQL",
+        "React",
+        "Typescript",
+        "TailwindCSS",
+      ],
+      source: "https://github.com/Lr0cha/personal-budget",
+      live: "https://lr0cha-personal-budget.vercel.app/",
+    },
+    {
+      title: "Find Books Website",
+      image: findBooks,
+      description:
+        "A site to search for book details using the OpenLibrary API.",
+      technologies: ["React", "Typescript", "TailwindCSS"],
+      source: "https://github.com/Lr0cha/search-books",
+      live: "https://lr0cha-find-books.vercel.app/",
+    },
+    {
       title: "E-Commerce Website",
       image: phpEcommerce,
       description:
@@ -50,24 +75,6 @@ export default {
       technologies: ["HTML", "CSS", "JavaScript"],
       source: "https://github.com/Lr0cha/date-calculator",
       live: "https://lr0cha.github.io/date-calculator/",
-    },
-    {
-      title: "Find Books Website",
-      image: findBooks,
-      description:
-        "A site to search for book details using the OpenLibrary API.",
-      technologies: ["React", "Typescript", "TailwindCSS"],
-      source: "https://github.com/Lr0cha/search-books",
-      live: "https://lr0cha-find-books.vercel.app/",
-    },
-    {
-      title: "Parking Management API",
-      image: park,
-      description:
-        "A RESTful API built with Spring Boot for managing parking lot operations, including users, vehicle check-in, check-out, and availability tracking.",
-      technologies: ["Java", "Spring", "MySQL"],
-      source: "https://github.com/Lr0cha/Parking-Management-API",
-      live: "",
     },
     {
       title: "Portfolio Website",
