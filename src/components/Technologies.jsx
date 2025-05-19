@@ -1,12 +1,8 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { RiJavaLine } from "react-icons/ri";
+import { RiReactjsLine, RiTailwindCssLine, RiJavaLine } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { SiSpringboot } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiPython } from "react-icons/si";
-import { SiPhp } from "react-icons/si";
+import { SiSpringboot, SiPython, SiPhp, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
-import { SiTypescript } from "react-icons/si";
+import { DiDocker } from "react-icons/di";
 
 const techVariants = (duration) => ({
   initial: { y: -10 },
@@ -37,71 +33,86 @@ const Technologies = () => {
           variants={techVariants(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="w-32 h-32 flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiJavaLine className="text-7xl text-orange-600" />
+          <RiJavaLine className="text-5xl text-orange-600" />
+          <p className="text-xs text-neutral-500 text-center mt-2">Java</p>
         </motion.div>
 
         <motion.div
           variants={techVariants(5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="w-32 h-32 flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiSpringboot className="text-7xl text-green-600" />
+          <SiSpringboot className="text-5xl text-green-600" />
+          <p className="text-xs text-neutral-500 text-center mt-2">
+            Spring Boot
+          </p>
         </motion.div>
 
         <motion.div
           variants={techVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="w-32 h-32 flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <DiDocker className="text-5xl text-sky-700" />
+          <p className="text-xs text-neutral-500 text-center mt-2">Docker</p>
         </motion.div>
+
         <motion.div
           variants={techVariants(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="w-32 h-32 flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiTypescript className="text-7xl text-blue-600" />
+          <RiReactjsLine className="text-5xl text-cyan-400" />
+          <p className="text-xs text-neutral-500 text-center mt-2">React</p>
         </motion.div>
 
         <motion.div
           variants={techVariants(6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="w-32 h-32 flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <BiLogoPostgresql className="text-7xl text-sky-700" />
+          <SiTypescript className="text-5xl text-blue-600" />
+          <p className="text-xs text-neutral-500 text-center mt-2">
+            Typescript
+          </p>
         </motion.div>
 
         <motion.div
           variants={techVariants(7)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="w-32 h-32 flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiCss3 className="text-7xl text-blue-500" />
+          <BiLogoPostgresql className="text-5xl text-blue-500" />
+          <p className="text-xs text-neutral-500 text-center mt-2">
+            PostgreSQL
+          </p>
         </motion.div>
 
         <motion.div
           variants={techVariants(4.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="w-32 h-32 flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiPython className="text-7xl text-yellow-500" />
+          <SiPython className="text-5xl text-yellow-500" />
+          <p className="text-xs text-neutral-500 text-center mt-2">Python</p>
         </motion.div>
 
         <motion.div
           variants={techVariants(3.25)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="w-32 h-32 flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiPhp className="text-7xl text-blue-700" />
+          <SiPhp className="text-5xl text-blue-700" />
+          <p className="text-xs text-neutral-500 text-center mt-2">PHP</p>
         </motion.div>
       </motion.div>
     </div>

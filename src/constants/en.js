@@ -1,8 +1,8 @@
 import phpEcommerce from "../assets/projects/phpEcommerce.png";
 import dateCalculator from "../assets/projects/dateCalculator.png";
 import budget from "../assets/projects/budget.png";
-import myPortfolio from "../assets/projects/myPortfolio.png";
 import findBooks from "../assets/projects/findBooks.png";
+import mediaPage from "../assets/projects/mediaPage.png";
 export default {
   HERO_CONTENT: `I'm an IT student and Full Stack developer, with experience in front-end technologies such as ReactJS and back-end using Java with Spring Framework, as well as databases such as MySQL, PostgreSQL and other tools. My goal is to apply and expand my knowledge, and I'm open to freelance and internship opportunities.`,
 
@@ -34,6 +34,14 @@ export default {
 
   PROJECTS: [
     {
+      title: "Media Tracker website",
+      image: mediaPage,
+      description: "Site to track your progress on your favorite content.",
+      technologies: ["Nextjs", "Typescript", "Supabase"],
+      source: "https://github.com/Lr0cha/media-tracker",
+      live: "https://media-tracker-inky.vercel.app/",
+    },
+    {
       title: "Personal Budget Website",
       image: budget,
       description:
@@ -50,15 +58,6 @@ export default {
       live: "https://lr0cha-personal-budget.vercel.app/",
     },
     {
-      title: "Find Books Website",
-      image: findBooks,
-      description:
-        "A site to search for book details using the OpenLibrary API.",
-      technologies: ["React", "Typescript", "TailwindCSS"],
-      source: "https://github.com/Lr0cha/search-books",
-      live: "https://lr0cha-find-books.vercel.app/",
-    },
-    {
       title: "E-Commerce Website",
       image: phpEcommerce,
       description:
@@ -68,6 +67,15 @@ export default {
       live: "",
     },
     {
+      title: "Find Books Website",
+      image: findBooks,
+      description:
+        "A site to search for book details using the OpenLibrary API.",
+      technologies: ["React", "Typescript", "TailwindCSS"],
+      source: "https://github.com/Lr0cha/search-books",
+      live: "https://lr0cha-find-books.vercel.app/",
+    },
+    {
       title: "Date Calculator Website",
       image: dateCalculator,
       description:
@@ -75,15 +83,6 @@ export default {
       technologies: ["HTML", "CSS", "JavaScript"],
       source: "https://github.com/Lr0cha/date-calculator",
       live: "https://lr0cha.github.io/date-calculator/",
-    },
-    {
-      title: "Portfolio Website",
-      image: myPortfolio,
-      description:
-        "A personal portfolio website showcasing education, projects, and contact information, designed with a clean and responsive layout.",
-      technologies: ["React", "Tailwind CSS"],
-      source: "https://github.com/Lr0cha/my-portfolio-website",
-      live: "https://lr0cha-portfolio.vercel.app/",
     },
   ],
 

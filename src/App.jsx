@@ -9,8 +9,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 const App = () => {
-  const { t } = useTranslation(); // hook p/ as traduções
-
   return (
     <div className="text-neutral-300 antialiased selection:bg-cyan-3000 selection:text-cyan-900 min-h-screen">
       <div className="fixed top-0 -z-10 h-full w-full">

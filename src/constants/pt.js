@@ -1,8 +1,8 @@
 import phpEcommerce from "../assets/projects/phpEcommerce.png";
 import dateCalculator from "../assets/projects/dateCalculator.png";
 import budget from "../assets/projects/budget.png";
-import myPortfolio from "../assets/projects/myPortfolio.png";
 import findBooks from "../assets/projects/findBooks.png";
+import mediaPage from "../assets/projects/mediaPage.png";
 export default {
   HERO_CONTENT: `Sou estudante de TI e desenvolvedor Full Stack, com experiência em tecnologias de front-end como ReactJS e back-end usando Java com Spring Framework, além de bancos de dados como MySQL, PostgreSQL e outras ferramentas. Meu objetivo é aplicar e expandir meus conhecimentos, e estou aberto a oportunidades de freelance e estágio.`,
 
@@ -34,6 +34,15 @@ export default {
 
   PROJECTS: [
     {
+      title: "Media Tracker",
+      image: mediaPage,
+      description:
+        "Site para acompanhar seu progresso em seus conteúdos favoritos.",
+      technologies: ["Nextjs", "Typescript", "Supabase"],
+      source: "https://github.com/Lr0cha/media-tracker",
+      live: "https://media-tracker-inky.vercel.app/",
+    },
+    {
       title: "Site de controle pessoal de despesas",
       image: budget,
       description:
@@ -50,15 +59,6 @@ export default {
       live: "https://lr0cha-personal-budget.vercel.app/",
     },
     {
-      title: "Site de busca de livros",
-      image: findBooks,
-      description:
-        "Um site para pesquisar detalhes de livros utilizando a API do OpenLibrary.",
-      technologies: ["React", "Typescript", "TailwindCSS"],
-      source: "https://github.com/Lr0cha/search-books",
-      live: "https://lr0cha-find-books.vercel.app/",
-    },
-    {
       title: "Site de E-Commerce",
       image: phpEcommerce,
       description:
@@ -68,6 +68,15 @@ export default {
       live: "",
     },
     {
+      title: "Site de busca de livros",
+      image: findBooks,
+      description:
+        "Um site para pesquisar detalhes de livros utilizando a API do OpenLibrary.",
+      technologies: ["React", "Typescript", "TailwindCSS"],
+      source: "https://github.com/Lr0cha/search-books",
+      live: "https://lr0cha-find-books.vercel.app/",
+    },
+    {
       title: "Site Diferença entre Datas",
       image: dateCalculator,
       description:
@@ -75,15 +84,6 @@ export default {
       technologies: ["HTML", "CSS", "JavaScript"],
       source: "https://github.com/Lr0cha/date-calculator",
       live: "https://lr0cha.github.io/date-calculator/",
-    },
-    {
-      title: "Site de Portfólio",
-      image: myPortfolio,
-      description:
-        "Um site de portfólio pessoal apresentando educação, projetos e informações de contato, com um design limpo e responsivo.",
-      technologies: ["React", "Tailwind CSS"],
-      source: "https://github.com/Lr0cha/my-portfolio-website",
-      live: "https://lr0cha-portfolio.vercel.app/",
     },
   ],
 
